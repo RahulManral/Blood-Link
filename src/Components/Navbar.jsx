@@ -9,10 +9,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-red-500 p-2">
+    <nav className="bg-red-500 p-3">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-2xl font-bold font-customFont">Blood-Link</div>
-        <div className="hidden md:flex space-x-4">
+        <div className="text-white text-3xl font-bold font-customFont"><spam className="text-red-800">Blood</spam>-Link</div>
+        <div className="hidden md:flex space-x-6 text-xl ">
           <Link to="/" className="text-white hover:text-red-950 font-customFont p-2">Home</Link>
           <Link to="/about" className="text-white hover:bg-red-500 font-customFont p-2">About</Link>
           <Link to="/connect" className="text-white hover:bg-red-500 font-customFont p-2">Connect</Link>
@@ -20,7 +20,7 @@ const Navbar = () => {
           <Link to="/contact" className="text-white hover:bg-red-500 font-customFont p-2">Contact</Link>
         </div>
         <div className="hidden md:flex">
-          <Link to="/donate" className="bg-white text-red-600 hover:bg-red-100 px-3 py-1 rounded transition font-customFont font-bold">Donate Now</Link>
+          <Link to="/donate" className="bg-white text-red-600 text-xl hover:bg-red-100 px-4 py-2 rounded transition font-customFont font-bold ">Donate Now</Link>
         </div>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-white focus:outline-none">
@@ -36,6 +36,7 @@ const Navbar = () => {
           <div className="bg-red-500 p-4 space-y-2">
             <Link to="/" className="block text-white hover:bg-red-400 p-2 rounded">Home</Link>
             <Link to="/about" className="block text-white hover:bg-red-400 p-2 rounded">About</Link>
+            <Link to="/connect" className="text-white hover:bg-red-500 font-customFont p-2">Connect</Link>
             <Link to="/donate" className="block text-white hover:bg-red-400 p-2 rounded">Donate</Link>
             <Link to="/contact" className="block text-white hover:bg-red-400 p-2 rounded">Contact</Link>
             <Link to="/donate" className="block bg-white text-red-600 hover:bg-red-100 px-4 py-2 rounded transition">Donate Now</Link>

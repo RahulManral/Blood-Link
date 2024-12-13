@@ -35,8 +35,9 @@ const AboutUsSection = () => {
   ];
 
   return (
-    <div className="max-w-7xl  p-6 sm:mx-6 lg:mx-20 xl:20">
-      <div className="flex flex-col md:flex-row items-center p-6 bg-red-200 rounded-xl border-4 border-black">
+    
+    <div className="p-8">
+      <div className="flex flex-col md:flex-row items-center p-6 bg-red-200 rounded-xl border-4 border-black  ">
         <div className="flex-1">
           <img
             src={aboutimage} // Replace with your image source
@@ -45,8 +46,8 @@ const AboutUsSection = () => {
           />
         </div>
         <div className="flex-col items-start p-4 font-customFont">
-          <h2 className="text-2xl font-bold mb-2">About Us</h2>
-          <p className="text-gray-600 font-semibold">
+          <h2 className="text-5xl font-bold mb-2">About Us</h2>
+          <p className="text-gray-600 font-semibold text-xl">
           At Blood-Link, our mission is to save lives by bridging the gap between blood donors and those in need. We are dedicated to fostering a community where compassion and generosity are at the forefront. Our goal is to make blood donation easy, accessible, and impactful for everyone involved.
           </p>
           <button className="mt-4 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700">
@@ -55,15 +56,16 @@ const AboutUsSection = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-14 mt-10">
+      <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-16 mt-10 ">
         {cards.map((card, index) => (
           <AboutUsCard key={index} title={card.title} description={card.description} image={card.image} />
         ))}
       </div>
-      <p className='bg-black mt-7 rounded-lg p-3  text-white font-customFont text-center  border-4 border-black font-bold'>
+      <p className='bg-black mt-7 rounded-lg p-3  text-white font-customFont text-center  border-4 border-black font-bold mx-10'>
       24x7 availability of blood so that No one should die waiting for Blood, Blood should wait to give a life.
       </p>
     </div>
+   
   );
 };
 

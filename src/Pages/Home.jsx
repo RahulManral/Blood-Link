@@ -6,13 +6,13 @@ const Home = () => {
       className="flex items-center justify-start h-screen bg-cover bg-center text-white text-center  relative bg-home" 
     >
       <div className="max-w-4xl p-6 mx-2  text-left font-customFont">
-        <h1 className="text-4xl md:text-5xl text-red-900 font-bold">
+        <h1 className="text-5xl md:text-6xl text-red-900 font-bold">
           Save Lives, 
         </h1>
-        <h1 className="text-4xl md:text-5xl text-red-900 font-bold mb-4">
+        <h1 className="text-5xl md:text-6xl text-red-900 font-bold mb-4">
           Donate Blood 
         </h1>
-        <p className="text-lg md:text-xl text-red-900  mb-6 flex items-center max-w-lg">
+        <p className="text-lg md:text-2xl text-red-900  mb-6 flex items-center max-w-lg">
           Your donation can make a difference in someone's life. Join us in our mission to save lives through blood donation.
         </p>
         <a 

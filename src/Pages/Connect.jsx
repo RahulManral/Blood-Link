@@ -35,8 +35,8 @@ const ConnectPage = () => {
         />
       </div>
 
-      <div className="overflow-auto rounded-md">
-        <table className="min-w-full bg-white border-4 border-black text-center shadow-md ">
+      <div className="overflow-auto rounded-md text-xl font-customFont">
+        <table className="min-w-full bg-white border-4 border-black text-center shadow-md font-customFont">
           <thead>
             <tr className="bg-gray-200 text-gray-700">
               <th className="py-3 px-4 border-b">Donor Name</th>
